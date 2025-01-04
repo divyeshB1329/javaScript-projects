@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>Lorem Ipsum Generator</nav>
+    <main>
+        <div class="range_main">
+            <div class="range">
+                <label for="prara">Paragraphs:</label>
+                <span id="paraValue">1</span>
+                <input value="1" id="para" type="range" min="0" max="100">
+            </div>
+            <div class="range">
+                <label for="prara">Words per Paragraph:</label>
+                <span id="paraValue2">10</span>
+                <input value="10" id="Wpara" type="range" min="0" max="100">
+            </div>
+        </div>
+
+        <div class="htmltag">
+            <h4>Tag:</h4>
+            <select name="tags" id="tags">
+                <option value="p">&lt;p&gt;</option>
+                <option value="h1">&lt;h1&gt;</option>
+                <option value="h2">&lt;h2&gt;</option>
+                <option value="h3">&lt;h3&gt;</option>
+                <option value="h4">&lt;h4&gt;</option>
+                <option value="h5">&lt;h5&gt;</option>
+                <option value="h6">&lt;h6&gt;</option>
+                <option value="span">&lt;span&gt;</option>
+            </select>
+        </div>
+        <br>
+        <div class="htmltag">
+            <h4>Include HTML:</h4>
+            <select name="tags" class="htmlYN" id="tags">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <button id="btn">Generate Lorem Ipsum</button>
+        <div id="lorem_para"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
